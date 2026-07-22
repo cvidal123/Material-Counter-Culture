@@ -1,7 +1,7 @@
 [
   {
-    "title": "Room One: Domestic Objects",
-    "description": "Everyday items that shape our daily lives and reflect cultural values",
+    "title": "Theme one: Blah blah blah",
+    "description": "theme one ",
     "artifacts": [
       {
         "id": 1,
@@ -46,7 +46,7 @@
     ]
   },
   {
-    "title": "Room Two: Textiles & Fashion",
+    "title": "Theme two: blah blah blah",
     "description": "Garments and fabrics that express identity, cultural tradition, and personal style",
     "artifacts": [
       {
@@ -92,7 +92,7 @@
     ]
   },
   {
-    "title": "Room Three: Tools & Labor",
+    "title": "Theme three: blah blah blah",
     "description": "Implements of work that reflect human ingenuity and the history of craft",
     "artifacts": [
       {
