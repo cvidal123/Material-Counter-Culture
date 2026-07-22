@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Counter-MaterialCulture: An immersive online exhibition">
+    <title>Counter-MaterialCulture</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Homepage -->
+    <div id="homepage" class="page active">
+        <div class="entrance">
+            <div class="entrance-content">
+                <h1 class="entrance-title">Counter-MaterialCulture</h1>
+                <p class="entrance-subtitle">An Online Exhibition</p>
+                <p class="entrance-instruction">Click anywhere to enter</p>
+            </div>
+            <div class="entrance-overlay"></div>
+        </div>
+
+        <div class="scroll-section">
+            <div class="scroll-content">
+                <div class="floating-text">
+                    <h2>Welcome to the Exhibition</h2>
+                    <p>Explore our curated collection of cultural artifacts and material culture through themed exhibition rooms.</p>
+                    <p>Each room features carefully selected pieces that tell a story about the objects we live with and the culture they represent.</p>
+                </div>
+
+                <div class="rooms-section">
+                    <h3>Enter a Room</h3>
+                    <div id="roomsList" class="rooms-grid">
+                        <!-- Rooms will be loaded here -->
+                    </div>
+                </div>
+
+                <footer class="homepage-footer">
+                    <p>&copy; 2024 Counter-MaterialCulture</p>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <!-- Exhibition Room Template -->
+    <div id="roomPage" class="page">
+        <div class="room-header">
+            <h1 id="roomTitle"></h1>
+            <p id="roomDescription"></p>
+        </div>
+
+        <div class="room-container">
+            <div id="artifactGrid" class="artifact-grid">
+                <!-- Artifacts will be loaded here -->
+            </div>
+
+            <!-- Expanded artifact view -->
+            <div id="expandedView" class="expanded-view">
+                <div class="expanded-artifact">
+                    <img id="expandedImage" src="" alt="">
+                    <div class="expanded-info">
+                        <h2 id="expandedTitle"></h2>
+                        <div class="expanded-meta">
+                            <p><strong>Year:</strong> <span id="expandedYear"></span></p>
+                            <p><strong>Maker:</strong> <span id="expandedMaker"></span></p>
+                            <p><strong>Category:</strong> <span id="expandedCategory"></span></p>
+                            <p><strong>Materials:</strong> <span id="expandedMaterials"></span></p>
+                        </div>
+                        <div class="expanded-description">
+                            <h3>About This Artifact</h3>
+                            <p id="expandedDescription"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="room-controls">
+            <button id="backToHome" class="btn btn-back">← Back to Entrance</button>
+            <div id="roomNav" class="room-nav">
+                <!-- Room navigation will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="js/exhibition.js"></script>
+</body>
+</html>

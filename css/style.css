@@ -1,0 +1,571 @@
+/* ============================================
+   GLOBAL STYLES
+   ============================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+    overflow-x: hidden;
+}
+
+/* ============================================
+   PAGE LAYOUT
+   ============================================ */
+
+.page {
+    display: none;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.page.active {
+    display: block;
+}
+
+/* ============================================
+   HOMEPAGE - ENTRANCE
+   ============================================ */
+
+.entrance {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.entrance-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+}
+
+.entrance-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+}
+
+.entrance-title {
+    font-size: 4.5em;
+    font-weight: 700;
+    margin-bottom: 15px;
+    letter-spacing: -2px;
+    animation: fadeInDown 1s ease-out;
+}
+
+.entrance-subtitle {
+    font-size: 1.8em;
+    font-weight: 300;
+    margin-bottom: 40px;
+    opacity: 0.9;
+    animation: fadeInUp 1s ease-out 0.2s both;
+}
+
+.entrance-instruction {
+    font-size: 1.1em;
+    opacity: 0.8;
+    animation: pulse 2s ease-in-out infinite 0.8s;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 0.6;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+}
+
+/* ============================================
+   SCROLL SECTION
+   ============================================ */
+
+.scroll-section {
+    min-height: 100vh;
+    padding: 80px 40px;
+    background: #f9f9f9;
+}
+
+.scroll-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.floating-text {
+    margin-bottom: 80px;
+}
+
+.floating-text h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+    animation: slideInLeft 0.8s ease-out;
+}
+
+.floating-text p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 15px;
+    animation: slideInRight 0.8s ease-out 0.2s both;
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* ============================================
+   ROOMS SECTION
+   ============================================ */
+
+.rooms-section {
+    margin-bottom: 80px;
+}
+
+.rooms-section h3 {
+    font-size: 2em;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.rooms-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.room-card {
+    background: white;
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.room-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    border-color: #667eea;
+}
+
+.room-card h4 {
+    font-size: 1.4em;
+    color: #667eea;
+    margin-bottom: 12px;
+    transition: color 0.3s;
+}
+
+.room-card p {
+    color: #666;
+    font-size: 0.95em;
+    line-height: 1.6;
+}
+
+.room-card:hover h4 {
+    color: #764ba2;
+}
+
+/* ============================================
+   HOMEPAGE FOOTER
+   ============================================ */
+
+.homepage-footer {
+    text-align: center;
+    padding-top: 40px;
+    border-top: 1px solid #ddd;
+    color: #999;
+}
+
+/* ============================================
+   EXHIBITION ROOM PAGE
+   ============================================ */
+
+.room-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.room-header h1 {
+    font-size: 3em;
+    margin-bottom: 15px;
+}
+
+.room-header p {
+    font-size: 1.2em;
+    opacity: 0.9;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* ============================================
+   ARTIFACT GRID & INTERACTION
+   ============================================ */
+
+.room-container {
+    position: relative;
+    min-height: 60vh;
+    padding: 60px 40px;
+    background: white;
+}
+
+.artifact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    transition: all 0.4s ease;
+}
+
+.artifact-grid.has-expanded {
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    gap: 15px;
+}
+
+.artifact-item {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.artifact-item.small {
+    opacity: 0.7;
+}
+
+.artifact-item img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.artifact-item:hover img {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transform: scale(1.05);
+}
+
+.artifact-item.small img {
+    width: 60px;
+    aspect-ratio: 1;
+}
+
+.artifact-label {
+    margin-top: 8px;
+    font-size: 0.9em;
+    color: #333;
+    text-align: center;
+}
+
+.artifact-label strong {
+    display: block;
+    font-weight: 600;
+}
+
+.artifact-label small {
+    color: #999;
+}
+
+.artifact-item.small .artifact-label {
+    font-size: 0.7em;
+    margin-top: 4px;
+}
+
+/* ============================================
+   EXPANDED VIEW
+   ============================================ */
+
+.expanded-view {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 100;
+    padding: 40px 20px;
+    animation: fadeIn 0.4s ease-out;
+}
+
+.expanded-view.active {
+    display: flex;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.expanded-artifact {
+    background: white;
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 900px;
+    width: 100%;
+    padding: 40px;
+    max-height: 80vh;
+    overflow-y: auto;
+    animation: slideUp 0.4s ease-out;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.expanded-artifact img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.expanded-info h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.expanded-meta {
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 6px;
+    margin-bottom: 25px;
+}
+
+.expanded-meta p {
+    margin-bottom: 10px;
+    font-size: 0.95em;
+}
+
+.expanded-meta strong {
+    color: #667eea;
+}
+
+.expanded-description h3 {
+    font-size: 1.2em;
+    margin-bottom: 12px;
+    color: #333;
+}
+
+.expanded-description p {
+    color: #666;
+    line-height: 1.8;
+}
+
+/* ============================================
+   ROOM CONTROLS
+   ============================================ */
+
+.room-controls {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background: #f9f9f9;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-back {
+    background-color: #667eea;
+    color: white;
+}
+
+.btn-back:hover {
+    background-color: #5568d3;
+    transform: translateY(-2px);
+}
+
+.room-nav {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.btn-room {
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 10px 18px;
+    font-size: 0.9em;
+}
+
+.btn-room:hover {
+    background-color: #667eea;
+    color: white;
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+@media (max-width: 768px) {
+    .entrance-title {
+        font-size: 2.5em;
+    }
+
+    .entrance-subtitle {
+        font-size: 1.3em;
+    }
+
+    .scroll-section {
+        padding: 40px 20px;
+    }
+
+    .floating-text h2 {
+        font-size: 1.8em;
+    }
+
+    .room-header {
+        padding: 40px 20px;
+    }
+
+    .room-header h1 {
+        font-size: 2em;
+    }
+
+    .room-container {
+        padding: 40px 20px;
+    }
+
+    .artifact-grid {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 20px;
+    }
+
+    .expanded-artifact {
+        grid-template-columns: 1fr;
+        padding: 20px;
+        gap: 25px;
+    }
+
+    .room-controls {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .entrance-title {
+        font-size: 1.8em;
+    }
+
+    .entrance-subtitle {
+        font-size: 1em;
+    }
+
+    .scroll-section {
+        padding: 30px 15px;
+    }
+
+    .floating-text h2 {
+        font-size: 1.4em;
+    }
+
+    .room-header h1 {
+        font-size: 1.5em;
+    }
+
+    .artifact-grid {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+        gap: 15px;
+    }
+
+    .btn {
+        padding: 10px 18px;
+        font-size: 0.9em;
+    }
+}

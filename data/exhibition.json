@@ -1,0 +1,140 @@
+[
+  {
+    "title": "Room One: Domestic Objects",
+    "description": "Everyday items that shape our daily lives and reflect cultural values",
+    "artifacts": [
+      {
+        "id": 1,
+        "title": "Ceramic Bowl",
+        "year": "1950",
+        "maker": "Unknown",
+        "category": "Ceramics",
+        "materials": ["ceramic", "glaze"],
+        "description": "A hand-thrown ceramic bowl representing the craftsmanship and utility of mid-century domestic pottery. This piece reflects the intersection of functional design and artistic expression.",
+        "image": "https://via.placeholder.com/400x400?text=Bowl"
+      },
+      {
+        "id": 2,
+        "title": "Brass Scale",
+        "year": "1920s",
+        "maker": "Unknown",
+        "category": "Tools",
+        "materials": ["brass", "steel"],
+        "description": "A vintage kitchen scale used for measuring ingredients. This object represents the rationalization of domestic labor and the importance of precision in cooking.",
+        "image": "https://via.placeholder.com/400x400?text=Scale"
+      },
+      {
+        "id": 3,
+        "title": "Linen Napkin",
+        "year": "1930s",
+        "maker": "Unknown",
+        "category": "Textiles",
+        "materials": ["linen", "embroidery thread"],
+        "description": "Hand-embroidered linen napkin from the early 20th century. The embroidered details reflect domestic pride and the value placed on table presentation.",
+        "image": "https://via.placeholder.com/400x400?text=Napkin"
+      },
+      {
+        "id": 4,
+        "title": "Glass Bottle",
+        "year": "1960s",
+        "maker": "Unknown",
+        "category": "Glass",
+        "materials": ["glass"],
+        "description": "An amber glass bottle likely used for storing liquids or preserves. This functional object demonstrates the evolution of glass manufacturing and domestic storage.",
+        "image": "https://via.placeholder.com/400x400?text=Bottle"
+      }
+    ]
+  },
+  {
+    "title": "Room Two: Textiles & Fashion",
+    "description": "Garments and fabrics that express identity, cultural tradition, and personal style",
+    "artifacts": [
+      {
+        "id": 5,
+        "title": "Wool Scarf",
+        "year": "1970s",
+        "maker": "Unknown",
+        "category": "Fashion",
+        "materials": ["wool"],
+        "description": "A hand-woven wool scarf featuring traditional geometric patterns. The textile demonstrates both cultural heritage and individual expression through pattern and color.",
+        "image": "https://via.placeholder.com/400x400?text=Scarf"
+      },
+      {
+        "id": 6,
+        "title": "Embroidered Patch",
+        "year": "1980s",
+        "maker": "Unknown",
+        "category": "Textiles",
+        "materials": ["fabric", "thread"],
+        "description": "A decorative embroidered patch representing subcultural identity and personal adornment. These objects became symbols of belonging to communities and movements.",
+        "image": "https://via.placeholder.com/400x400?text=Patch"
+      },
+      {
+        "id": 7,
+        "title": "Silk Ribbon",
+        "year": "1890s",
+        "maker": "Unknown",
+        "category": "Fashion",
+        "materials": ["silk"],
+        "description": "A finely woven silk ribbon from the Victorian era. The delicate material speaks to changing notions of femininity and the importance of ornamentation in daily dress.",
+        "image": "https://via.placeholder.com/400x400?text=Ribbon"
+      },
+      {
+        "id": 8,
+        "title": "Leather Belt",
+        "year": "1960s",
+        "maker": "Unknown",
+        "category": "Fashion",
+        "materials": ["leather", "metal buckle"],
+        "description": "A worn leather belt with a distinctive metal buckle, showing signs of regular use. The object tells a story of time passing and personal history through its patina.",
+        "image": "https://via.placeholder.com/400x400?text=Belt"
+      }
+    ]
+  },
+  {
+    "title": "Room Three: Tools & Labor",
+    "description": "Implements of work that reflect human ingenuity and the history of craft",
+    "artifacts": [
+      {
+        "id": 9,
+        "title": "Hand Chisel",
+        "year": "1900s",
+        "maker": "Unknown",
+        "category": "Tools",
+        "materials": ["wood", "steel"],
+        "description": "A well-used woodworking chisel with a handle worn smooth by years of use. This tool connects us to generations of craftspeople and their intimate knowledge of materials.",
+        "image": "https://via.placeholder.com/400x400?text=Chisel"
+      },
+      {
+        "id": 10,
+        "title": "Sewing Thimble",
+        "year": "1940s",
+        "maker": "Unknown",
+        "category": "Domestic",
+        "materials": ["metal"],
+        "description": "A small metal thimble used in hand sewing. This humble object represents the invisible labor and skill of needle work that was essential to garment production and repair.",
+        "image": "https://via.placeholder.com/400x400?text=Thimble"
+      },
+      {
+        "id": 11,
+        "title": "Gardening Fork",
+        "year": "1920s",
+        "maker": "Unknown",
+        "category": "Tools",
+        "materials": ["iron", "wood"],
+        "description": "A sturdy iron fork used for gardening, showing wear from decades of turning soil. The tool represents the connection between humans and the earth.",
+        "image": "https://via.placeholder.com/400x400?text=Fork"
+      },
+      {
+        "id": 12,
+        "title": "Measuring Tape",
+        "year": "1950s",
+        "maker": "Unknown",
+        "category": "Tools",
+        "materials": ["metal", "cloth"],
+        "description": "A cloth measuring tape used in tailoring. This tool represents precision and the standardization of measurements in craft and manufacturing.",
+        "image": "https://via.placeholder.com/400x400?text=Tape"
+      }
+    ]
+  }
+]
